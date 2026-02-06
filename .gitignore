@@ -1,0 +1,17 @@
+# --- Editor Configs ---
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# --- Neovim State ---
+shada/
+undo/
+.netrwhist
+
+# --- OS / Filesystem ---
+.DS_Store
+Thumbs.db
