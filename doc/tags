@@ -1,0 +1,7 @@
+wsl-clipboard-authors	wsl-clipboard.txt	/*wsl-clipboard-authors*
+wsl-clipboard-config	wsl-clipboard.txt	/*wsl-clipboard-config*
+wsl-clipboard-intro	wsl-clipboard.txt	/*wsl-clipboard-intro*
+wsl-clipboard-requirements	wsl-clipboard.txt	/*wsl-clipboard-requirements*
+wsl-clipboard-usage	wsl-clipboard.txt	/*wsl-clipboard-usage*
+wsl-clipboard.nvim	wsl-clipboard.txt	/*wsl-clipboard.nvim*
+wsl-clipboard.txt	wsl-clipboard.txt	/*wsl-clipboard.txt*

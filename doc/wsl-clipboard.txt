@@ -1,0 +1,47 @@
+*wsl-clipboard.txt* Fast clipboard sync for WSL               *wsl-clipboard.nvim*
+
+==============================================================================
+INTRODUCTION                                               *wsl-clipboard-intro*
+
+wsl-clipboard.nvim is a high-performance clipboard bridge for Neovim on WSL2.
+It eliminates the 200ms+ lag found in default providers by using event-driven
+synchronization and direct system calls.
+
+==============================================================================
+USAGE                                                      *wsl-clipboard-usage*
+
+The plugin works automatically once setup is called. Depending on your
+chosen mode, it will hook into TextYankPost, FocusGained, or FocusLost events.
+
+==============================================================================
+CONFIGURATION                                             *wsl-clipboard-config*
+
+In your plugin manager (Lazy, Packer, etc.), pass the following options:
+
+mode (string) ~
+    Default: "sync"
+
+    Available modes:
+    "sync"      Pushes to Windows on yank; pulls on focus. (Recommended)
+    "focus"     Only syncs when switching windows. (Fastest)
+    "system"    Standard provider behavior. (Slowest)
+
+Example:
+>lua
+    require('wsl-clipboard').setup({
+        mode = "sync"
+    })
+<
+
+==============================================================================
+REQUIREMENTS                                        *wsl-clipboard-requirements*
+
+Linux: iconv, sed
+Windows: clip.exe, powershell.exe
+
+==============================================================================
+AUTHORS                                                  *wsl-clipboard-authors*
+
+Created by lmgraf.
+
+vim:tw=78:ts=8:ft=help:norl:
